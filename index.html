@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -16,23 +21,25 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="card">
-      <img src="./assets/images/image-omelette.jpeg" alt="Omelette" />
-      <h1 class="card__header">Simple Omelette Recipe</h1>
-      <p class="card__paragraph">
-        An easy and quick dish, perfect for any meal. This classic omelette
-        combines beaten eggs cooked to perfection, optionally filled with your
-        choice of cheese, vegetables, or meats.
-      </p>
-      <div class="card__description">
+    <div class="recipe__card">
+      <div class="recipe__description">
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette" />
+        <h1 class="recipe__header">Simple Omelette Recipe</h1>
+        <p class="recipe__paragraph">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+      <div class="recipe__time">
         <h3>Preparation time</h3>
         <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
+          <li><span>Total:</span> Approximately 10 minutes</li>
+          <li><span>Preparation:</span> 5 minutes</li>
+          <li><span>Cooking:</span> 5 minutes</li>
         </ul>
       </div>
-      <div class="card__ingredients">
+      <div class="recipe__ingredients">
         <h2>Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
@@ -48,29 +55,33 @@
         <h2>Instructions</h2>
         <ol>
           <li>
-            Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-            pepper until they are well mixed. You can add a tablespoon of water
-            or milk for a fluffier texture.
+            <span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
+            salt and pepper until they are well mixed. You can add a tablespoon
+            of water or milk for a fluffier texture.
           </li>
           <li>
-            Heat the pan: Place a non-stick frying pan over medium heat and add
-            butter or oil.
+            <span>Heat the pan:</span> Place a non-stick frying pan over medium
+            heat and add butter or oil.
           </li>
           <li>
-            Cook the omelette: Once the butter is melted and bubbling, pour in
-            the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <span>Cook the omelette:</span> Once the butter is melted and
+            bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+            coat the surface.
           </li>
           <li>
-            Add fillings (optional): When the eggs begin to set at the edges but
-            are still slightly runny in the middle, sprinkle your chosen
-            fillings over one half of the omelette.
+            <span>Add fillings (optional):</span> When the eggs begin to set at
+            the edges but are still slightly runny in the middle, sprinkle your
+            chosen fillings over one half of the omelette.
           </li>
           <li>
-            Fold and serve: As the omelette continues to cook, carefully lift
-            one edge and fold it over the fillings. Let it cook for another
-            minute, then slide it onto a plate.
+            <span>Fold and serve:</span> As the omelette continues to cook,
+            carefully lift one edge and fold it over the fillings. Let it cook
+            for another minute, then slide it onto a plate.
           </li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          <li>
+            <span>Enjoy:</span> Serve hot, with additional salt and pepper if
+            needed.
+          </li>
         </ol>
       </div>
       <div class="recipe__nutrition">
@@ -81,20 +92,20 @@
         </p>
         <table>
           <tr>
-            <td>Calories</td>
-            <td>277kcal</td>
+            <td class="a">Calories</td>
+            <td class="b">277kcal</td>
           </tr>
           <tr>
-            <td>Carbs</td>
-            <td>0g</td>
+            <td class="a">Carbs</td>
+            <td class="b">0g</td>
           </tr>
           <tr>
-            <td>Protein</td>
-            <td>20g</td>
+            <td class="a">Protein</td>
+            <td class="b">20g</td>
           </tr>
-          <tr>
-            <td>Fat</td>
-            <td>22g</td>
+          <tr class="no-border">
+            <td class="a">Fat</td>
+            <td class="b">22g</td>
           </tr>
         </table>
       </div>
