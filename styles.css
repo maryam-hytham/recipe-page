@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
   justify-content: center;
-  padding: 3rem;
+  padding: 2.5rem;
   height: 100%;
   border-radius: 1.5rem;
   gap: 2rem;
@@ -102,12 +102,22 @@ ol {
   font-size: 1rem;
 }
 .recipe__instructions li {
-  padding: 5px 0;
+  position: relative;
+  padding-left: 2.0rem;
+  text-indent: -1.5rem; 
+  margin-left: 0rem; 
+  margin-bottom: 0.8rem;
+  display: block;
   color: hsl(30, 10%, 34%);
   font-size: 1rem;
 }
 span {
   font-weight: 700;
+}
+.recipe__ingredients,
+.recipe__instructions {
+  box-shadow: 0 1px 0 hsl(30, 18%, 87%);
+  padding-bottom: 1rem;
 }
 .recipe__nutrition table {
   width: 100%;
